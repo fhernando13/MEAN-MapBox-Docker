@@ -1,0 +1,24 @@
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  margin-bottom: 5px;
+}
+
+.container-error-message {
+  padding: 3px;
+}
+
+label{
+  border-color: black;
+  margin-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size:15px;
+}
+
+#map{
+  position:absolute;;
+  text-align: center;
+  width: 600px;
+  height: 450px;
+}

@@ -1,0 +1,119 @@
+<div class="container pt-1">
+
+    <div class="row">
+        <h3>Information User</h3>
+      <div class="col-sm-5" id="info">
+        <!--  -->
+        <div class="col-12">
+            <form >
+                
+                <div class="row">
+                    <div class="col-sm-6">             
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="text" class="form-control  form-control-sm" [(ngModel)]="userForm.name" [ngModelOptions]="{standalone:true}" placeholder="Add the name" disabled>
+                        </div>                    
+                    </div>
+        
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Father's lastname</label>
+                            <input type="text" class="form-control form-control-sm" [(ngModel)]="userForm.fathers_lastname" [ngModelOptions]="{standalone:true}"placeholder="Add father's lastname" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">             
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Mother's lastname</label>
+                            <input type="text" class="form-control  form-control-sm" [(ngModel)]="userForm.mothers_lastname" [ngModelOptions]="{standalone:true}" placeholder="Add mother's lastname" disabled>
+                        </div>                    
+                    </div>
+        
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Phone</label>
+                            <input type="text" class="form-control form-control-sm" [(ngModel)]="userForm.phone" [ngModelOptions]="{standalone:true}" placeholder="Add phone" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Age</label>
+                            <input type="number" class="form-control form-control-sm" [(ngModel)]="userForm.age" [ngModelOptions]="{standalone:true}" placeholder="Add age" disabled>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control form-control-sm" [(ngModel)]="userForm.email" [ngModelOptions]="{standalone:true}" placeholder="Add email" disabled>
+                        </div>      
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Code Postal</label>
+                            <input type="text" class="form-control form-control-sm" [(ngModel)]="userForm.code_postal" [ngModelOptions]="{standalone:true}" placeholder="Add code postal" disabled>
+                        </div>      
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">State</label>
+                            <input type="text" class="form-control form-control-sm" [(ngModel)]="userForm.state" [ngModelOptions]="{standalone:true}"  placeholder="Add state" disabled>
+                        </div>    
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Town</label>
+                            <input type="text" class="form-control form-control-sm" [(ngModel)]="userForm.town" [ngModelOptions]="{standalone:true}"   placeholder="Add town" disabled>
+                        </div>       
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Suburb</label>
+                            <input type="text" class="form-control form-control-sm" [(ngModel)]="userForm.suburb" [ngModelOptions]="{standalone:true}" placeholder="Add suburb" disabled>
+                        </div>        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Street</label>
+                            <input type="text" class="form-control form-control-sm" [(ngModel)]="userForm.street" [ngModelOptions]="{standalone:true}"  placeholder="Add street" disabled>
+                        </div>      
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"># street</label>
+                            <input type="text" class="form-control form-control-sm" [ngModel]="userForm.no_street" [ngModelOptions]="{standalone:true}"  placeholder="#" disabled>
+                        </div>   
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+        
+        <!--  -->
+      </div>
+
+      <div class="col-sm-7" id="designmap">
+        <div id="map">
+
+        </div>
+        
+      </div>
+
+    </div>
+  
+  </div>

@@ -1,0 +1,19 @@
+#title{
+    text-align: center;
+}
+#map{
+    position:absolute;;
+    text-align: center;
+    width: 700px;
+    height: 450px;
+}
+h3{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+label{
+    border-color: black;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+  }

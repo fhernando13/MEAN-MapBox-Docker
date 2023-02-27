@@ -1,0 +1,63 @@
+<div class="container">
+
+  <div id="exportExcel">
+    <button 
+      data-title="Download this table in xls format"
+      type="button" 
+      class="btn btn-outline-success btn-sm"
+      (click)="exportToExcel()"
+      >
+      Export Excel
+    </button>
+  </div>
+  <br>
+  <table class="table table-striped table-bordered" id="tableUser">
+    
+    <thead> 
+      <tr>
+        <th scope="row">ID</th>
+        <th scope="row">Name</th>
+        <th scope="row">Father's Lastname</th>
+        <th scope="row">Mother's Lastname</th>
+        <th scope="row">Age</th>
+        <th scope="row">Email</th>
+        <th scope="row">Phone</th>
+        <th td colspan="3" class="table-desactive">Options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td scope="col">{{user.id}}</td>
+        <td scope="col">{{user.name}}</td>
+        <td scope="col">{{user.fathers_lastname}}</td>
+        <td scope="col">{{user.mothers_lastname}}</td>
+        <td scope="col">{{user.age}}</td>
+        <td scope="col">{{user.email}}</td>
+        <td scope="col">{{user.phone}}</td>
+        <!-- button edit -->
+        <td scope="col"><button 
+          data-title="Update user"
+          type="button" 
+          class="btn btn-warning  btn-sm"
+          (click)="editUser(user.id)"><i class="bi bi-pencil-square"></i></button></td>
+          <!-- button delete -->
+          <!-- routerLink="/users/" -->
+        <td scope="col"><button 
+          data-title="Delete user"
+          type="button" 
+          class="btn btn-danger  btn-sm" 
+          (click)="askDeleteUser(user.id)">
+          <i class="bi bi-person-dash"></i>
+        </button></td>
+        <!-- button details -->
+        <td scope="col"><button 
+          data-title="Info user"
+          type="button" 
+          class="btn btn-info  btn-sm" 
+          (click)="detailUser(user.id)">
+          <i class="bi bi-info-circle"></i>
+        </button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

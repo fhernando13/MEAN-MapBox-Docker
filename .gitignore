@@ -1,0 +1,5 @@
+venv
+.vscode
+
+/client/src/environments/environment.ts
+/client/src/environments/environment.prod.ts
