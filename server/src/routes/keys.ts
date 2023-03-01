@@ -1,9 +1,9 @@
 require('dotenv').config();
 
-const user = process.env.USERDB || 'user';
-const pass = process.env.PASS || 'password';
-const host = process.env.HOST || 'name_host';
-const dbname = process.env.DATABASE || 'database_name';
+const user = process.env.USERDB || 'root';
+const pass = process.env.PASS || 'rot';
+const host = process.env.HOST || 'name_host';//or name docker
+const db = process.env.DATABASE || 'db_name';
 
 export default {
     
@@ -11,7 +11,7 @@ export default {
         host: host,
         user: user,
         password: pass,
-        databse: dbname
+        databse: db,
     }
 
 };
